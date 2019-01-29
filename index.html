@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <title>Color Slider</title>
+</head>
+<body>
+    <div class="wrap">
+        <main>
+            <div class="color-slider-wrap">
+                <div class="color-wrap">
+                    <div id="color-display"></div>
+                </div>
+                <div class="sliders">
+                    <div>
+                        <label for="red">Red</label>
+                        <input type="number" id="redNum">
+                        <input value="200" type="range" min="0" max="255" id="red">
+                    </div>
+                    <div>
+                        <label for="green">Green</label>
+                        <input type="number" id="greenNum">
+                        <input value="130" type="range" min="0" max="255" id="green">
+                    </div>
+                    <div>
+                        <label for="blue">Blue</label>
+                        <input type="number" id="blueNum">
+                        <input value="180" type="range" min="0" max="255" id="blue">
+                    </div>
+                    <div>
+                        <label for="opacity">Opacity</label>
+                        <input type="number" id="opacityNum">
+                        <input value="1" type="range" min="0" max="1" step="0.1" id="opacity">
+                    </div>
+                </div>
+            </div>
+            <div class="text-wrap">
+                <div id="text-display">
+                    <label for="hex-color">HexColor:</label>
+                    <input type="text" id="hex-color" class="hex-color" /> <br>
+                    <label for="rgb-color">RGBColor:</label>
+                    <input type="text" id="rgb-color" class="rgb-color" />
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer> 
+        <div class="icon-wrap">
+            <a href="#" target="_blank">
+                <i class="fab fa-github fa-2x"></i>  
+            </a>
+        </div>
+        Pratik &copy; 2018
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
